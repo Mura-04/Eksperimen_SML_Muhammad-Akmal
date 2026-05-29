@@ -4,11 +4,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 def run_preprocessing(input_path, output_path):
-    """
-    Fungsi otomatisasi data preprocessing untuk Heart Disease Dataset.
-    Membaca data mentah, membersihkan, melakukan encoding & scaling, 
-    lakhis menyimpan hasilnya ke folder tujuan.
-    """
+
     print(f"[*] Membaca dataset dari: {input_path}")
     if not os.path.exists(input_path):
         raise FileNotFoundError(f"File {input_path} tidak ditemukan!")
